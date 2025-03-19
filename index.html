@@ -32,13 +32,13 @@
     color: #333;
 }
         body {
-           background-color:lightgrey;
+           background-color:gray;
+        
         }
    
 
 
         .container {
-            background-image: url(https://cdn.pixabay.com/photo/2017/09/06/14/10/star-2721602_1280.jpg);
            
             margin: auto;
             width: 80%;
@@ -155,16 +155,17 @@
         }
         #box {
             background-color: white;
+            font-size: larger;
 
         }
         #bottom {
     display: flex;
     justify-content: space-around; /* Distributes space evenly */
     align-items: center; /* Aligns items vertically */
-    width: 70%;
+    width: 100%;
     margin-bottom: 40px;
     margin: auto;
-    background-color: red;
+    background-color:red
 }
 
 #bottom img, 
@@ -176,20 +177,20 @@
 
   .box-2{
     display: flex;
-    justify-content: center; /* Centers items horizontally */
-   margin-top: 20px;
+    justify-content:left; /* Centers items horizontally */
+   background-image: url(https://cdn.pixabay.com/photo/2021/09/17/21/55/hospital-6633776_1280.png);
     padding: 20px;
     flex-wrap: wrap;
-    justify-content:space-between;
+   
 }
 .commitment-box {
    
-    background-color: #0077b6; /* Light gray background */
+    background-color: white; /* Light gray background */
     color: white;
-    border: 2px solid white; /* Blue border */
+    border: 6px solid darkblue; /* Blue border */
     border-radius: 10px;
     padding: 20px;
-    max-width: 500px;
+    max-width: 400px;
     text-align: center;
     font-size: large;
   
@@ -198,17 +199,32 @@
 }
 
 .commitment-box h2 {
-    color: white; /* Blue heading color */
+    color: #0077b6; /* Blue heading color */
     font-size: 50px;
     margin-bottom: 10px;
 }
 
 .commitment-box p {
-    color: white; /* Dark text */
+    color:#0077b6; /* Dark text */
     font-size: 25px;
   
     text-align: center;
 }
+.service-section {
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f0; /* Light gray background */
+            background-image: url('/images/background-image.jpg'); /* Replace with your image path */
+            background-size: cover; /* To make sure the background image covers the entire section */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat;
+        }
+
+        .service-section img {
+            width: 800px;
+            height: 400px;
+        }
+
 
 
     </style>
@@ -233,12 +249,11 @@
         <p>Making your space shine like never before!</p>
         <a class="call-btn" href="tel:1234567890">Call Now</a>
     </div>    
-    <div style="text-align: center;">
-        <img src="/images/service-assistance-label-with-clock.png" alt="24 hours" width="800px" height="400px">
-    </div>
-              
+    <section class="service-section">
+        <img src="/images/service-assistance-label-with-clock.png" alt="24 hours">
+    </section>  
     <h1 style="text-align: center;">Our Services</h1>
-         <div class="container">
+     <div class="container">
           <div class="services" id="services">
             <div class="service-box">
                 <img src="https://images.unsplash.com/photo-1581578949510-fa7315c4c350?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzaWRlbnRpYWwlMjBjbGVhbmluZ3xlbnwwfHwwfHx8MA%3D%3D" alt="Before Cleaning" width="300px">
@@ -310,7 +325,7 @@
         </div>
     </div>
 <section id="bottom">
-    <div id="box" style="border: 15px solid #0077b6; padding: 60px; width: 700px; border-radius: 8px; margin: 0 auto; text-align: center;">
+    <div id="box" style="border: 15px solid white; padding: 60px; width: 700px; border-radius: 8px; margin: 0 auto; text-align: center;">
       <h1>Request a Cleaning Service</h1>
       <p>Looking for professional cleaning services? Fill out our request form and let us know exactly what you need! Whether it’s a deep clean, regular maintenance, move-in/move-out cleaning, or specialized services, we’re here to help. Tell us the areas you’d like cleaned, any specific requests, and your preferred date and time. Our team will review your request and provide a customized cleaning plan that fits your needs. Get started today for a spotless, refreshed space!</p>
       <a href="https://clienthub.getjobber.com/client_hubs/650c7afd-9cbb-4a18-9afa-a67800ff53c2/public/work_request/new?source=social_media">
@@ -319,8 +334,6 @@
    </div>
 </section> 
 <div class="box-2">
- <img id="cleaning" src="https://cdn.pixabay.com/photo/2017/09/16/13/47/plastic-2755557_1280.jpg" alt="cleaning supplies" width="500px">
- <img src="images/Blue Simple Cleaning Service Facebook Post  (Facebook Profile Picture) (Logo).png" alt="logo">
    <div class="commitment-box">
     <h2>Our Commitment to You</h2>
     <p>At <strong>Miss No Spot Cleaning Service</strong>, we are dedicated to delivering top-quality cleaning with a personal touch. Our mission is to create spotless, fresh, and healthy spaces for our customers, ensuring your home or business is always at its best. We take pride in our attention to detail, reliability, and professionalism, treating every space as if it were our own. Your satisfaction is our priority, and we go above and beyond to exceed your expectations with every clean. Trust us to handle the dirty work, so you can enjoy a cleaner, brighter space—because at Miss No Spot, we leave no spot behind!</p>
@@ -344,8 +357,8 @@
   
   
   
-  
-  
+<img src="images/Blue Simple Cleaning Service Facebook Post  (Facebook Profile Picture) (Logo).png" alt="logo">
+<img id="cleaning" src="https://cdn.pixabay.com/photo/2017/09/16/13/47/plastic-2755557_1280.jpg" alt="cleaning supplies" width="500px">
   
 
 
