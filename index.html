@@ -161,7 +161,8 @@
     width: 100%;
     margin-bottom: 40px;
     margin: auto;
-    background-color:white;
+    background: url(https://cdn.pixabay.com/photo/2014/04/04/14/55/silver-313347_1280.jpg);
+    
 }
 
 #bottom img, 
@@ -176,7 +177,8 @@
     justify-content: space-between; /* Pushes items to left & right */
     align-items: flex-start; /* Aligns items at the top */
     gap: 20px; /* Adds space between boxes */
-    background-image: url(https://cdn.pixabay.com/photo/2019/10/11/11/25/light-4541695_1280.jpg);
+    background-image: url(https://cdn.pixabay.com/photo/2024/02/13/09/46/ai-generated-8570587_1280.png);
+    border: 8px solid red;
     padding: 20px;
     flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
@@ -186,9 +188,9 @@
     background-color: white;
     color: darkblue;
     border: 4px solid darkblue;
-    border-radius: 8px;
+    border-radius: 20px;
     padding: 15px;
-    max-width: 40%; /* Adjust width */
+    max-width: 30%; /* Adjust width */
     text-align: center;
     font-size: 16px;
     line-height: 1.4;
@@ -236,26 +238,30 @@
             width: 800px;
             height: 400px;
         }
-        .Video-can {
-    width: 400px;
-    padding: 20px;
-    border: 2px solid #333;
+        .video-container {
+    position: fixed !important; /* Force it to stay fixed */
+    bottom: 20px;
+    left: 20px;
+    width: 300px;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
     border-radius: 10px;
-    background-color: #f9f9f9;
+    z-index: 9999;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.Video-can h2, .Video-can p {
+    color: white;
     text-align: center;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+    font-size: 14px;
+    margin: 5px 0;
+}
 
-    /* Center the box on the page */
-    margin: 20px auto; /* Centers it horizontally */
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* Centers content inside the box */
-        }
-        .video {
-            width: 100%;
-            border-radius: 8px;
-        }
-
+.video {
+    width: 100%;
+    border-radius: 8px;
+}
+git add .
 
 
     </style>
@@ -274,15 +280,21 @@
             <a href="contact">Contact</a>
         </nav>
     </header>
+   
   
     <div class="hero" id="home">
         <h1>Spotless Cleaning, Every Time!</h1>
         <p>Making your space shine like never before!</p>
         <a class="call-btn" href="tel:1234567890">Call Now</a>
+        </div>
         
-    </div>    
+    </div> 
+    
+    </div>
+       
     <section class="service-section">
         <img src="/images/service-assistance-label-with-clock.png" alt="24 hours">
+        
     </section>  
     <h1 style="text-align: center;">Our Services</h1>
      <div class="container">
@@ -333,7 +345,7 @@
         </div>
     </div>
 <section id="bottom">
-    <div id="box" style="border: 15px solid red; padding: 60px; width: 700px; border-radius: 8px; margin: 0 auto; text-align: center;">
+    <div id="box" style="border: 10px solid #0077b6; padding: 60px; width: 700px; border-radius: 70px; margin: 0 auto; text-align: center;">
       <h1>Request a Cleaning Service</h1>
       <p>Looking for professional cleaning services? Fill out our request form and let us know exactly what you need! Whether it’s a deep clean, regular maintenance, move-in/move-out cleaning, or specialized services, we’re here to help. Tell us the areas you’d like cleaned, any specific requests, and your preferred date and time. Our team will review your request and provide a customized cleaning plan that fits your needs. Get started today for a spotless, refreshed space!</p>
       <a href="https://clienthub.getjobber.com/client_hubs/650c7afd-9cbb-4a18-9afa-a67800ff53c2/public/work_request/new?source=social_media">
@@ -348,34 +360,27 @@
        <p>At <strong>Miss No Spot Cleaning Service</strong>, we are dedicated to delivering top-quality cleaning with a personal touch. Our mission is to create spotless, fresh, and healthy spaces for our customers, ensuring your home or business is always at its best. We take pride in our attention to detail, reliability, and professionalism, treating every space as if it were our own. Your satisfaction is our priority, and we go above and beyond to exceed your expectations with every clean. Trust us to handle the dirty work, so you can enjoy a cleaner, brighter space—because at Miss No Spot, we leave no spot behind!</p>
     </div>
  
-    <!-- Areas Served Box (Right Side) -->
-    <div class="areas-served-box">
-       <h2>Areas We Serve</h2>
-       <ul>
-          <li>New York City, NY</li>
-          <li>Brooklyn, NY</li>
-          <li>Queens, NY</li>
-          <li>Bronx, NY</li>
-          <li>Staten Island, NY</li>
-       </ul>
-    </div>
+    
  </div>
+
  
-<div class="Video-can">
-    <h2>My Video Title</h2>
-    <p>This is a description of the video.</p>
-    <video class="video" controls>
-        <source src="/videos/f1572cd1e02773134c2b8e67e44606ae.MP4" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
-</div>
 
     <img class="satisfaction-badge" src="https://cdn.pixabay.com/photo/2016/03/19/03/09/satisfaction-label-1266125_1280.png" alt="Satisfaction Guaranteed" width="600px" height="300px">
 
     <div class="footer">
         <p>&copy; 2025 Miss No Spot Cleaning Services LLC | Contact us: (123) 456-7890 | info@missnospot.com</p>
 
-    </div>    
+    </div>  
+    <div class="video-container">
+        <div class="Video-can">
+           <h2>My Video Title</h2>
+           <p>This is a description of the video.</p>
+           <video class="video" controls>
+               <source src="/videos/f1572cd1e02773134c2b8e67e44606ae.MP4" type="video/mp4">
+               Your browser does not support the video tag.
+           </video>
+        </div>  
+    </div>
 
 </body>
 </html>
@@ -385,7 +390,6 @@
   
   
   
-<img id="cleaning" src="https://cdn.pixabay.com/photo/2017/09/16/13/47/plastic-2755557_1280.jpg" alt="cleaning supplies" width="500px">
   
 
 
