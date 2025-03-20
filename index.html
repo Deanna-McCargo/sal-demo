@@ -178,9 +178,11 @@
   .box-2{
     display: flex;
     justify-content:left; /* Centers items horizontally */
-   background-image: url(https://cdn.pixabay.com/photo/2021/09/17/21/55/hospital-6633776_1280.png);
+   background-image: url(https://cdn.pixabay.com/photo/2019/10/11/11/25/light-4541695_1280.jpg);
     padding: 20px;
     flex-wrap: wrap;
+    width: auto;
+    height: auto;
    
 }
 .commitment-box {
@@ -190,9 +192,9 @@
     border: 6px solid darkblue; /* Blue border */
     border-radius: 10px;
     padding: 20px;
-    max-width: 400px;
+   width: 600px;
     text-align: center;
-    font-size: large;
+    font-size:medium;
   
    
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
@@ -200,13 +202,13 @@
 
 .commitment-box h2 {
     color: #0077b6; /* Blue heading color */
-    font-size: 50px;
-    margin-bottom: 10px;
+    font-size: 30px;
+ 
 }
 
 .commitment-box p {
     color:#0077b6; /* Dark text */
-    font-size: 25px;
+    font-size: 20px;
   
     text-align: center;
 }
@@ -223,6 +225,20 @@
         .service-section img {
             width: 800px;
             height: 400px;
+        }
+        .Video-can {
+          
+            width: 400px;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            text-align: center;
+            box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+        }
+        .video {
+            width: 100%;
+            border-radius: 8px;
         }
 
 
@@ -248,6 +264,7 @@
         <h1>Spotless Cleaning, Every Time!</h1>
         <p>Making your space shine like never before!</p>
         <a class="call-btn" href="tel:1234567890">Call Now</a>
+        
     </div>    
     <section class="service-section">
         <img src="/images/service-assistance-label-with-clock.png" alt="24 hours">
@@ -338,10 +355,17 @@
     <h2>Our Commitment to You</h2>
     <p>At <strong>Miss No Spot Cleaning Service</strong>, we are dedicated to delivering top-quality cleaning with a personal touch. Our mission is to create spotless, fresh, and healthy spaces for our customers, ensuring your home or business is always at its best. We take pride in our attention to detail, reliability, and professionalism, treating every space as if it were our own. Your satisfaction is our priority, and we go above and beyond to exceed your expectations with every clean. Trust us to handle the dirty work, so you can enjoy a cleaner, brighter space—because at Miss No Spot, we leave no spot behind!</p>
        </div>
+       
 </div> 
-<br>
-<br>
-<Br>
+<div class="Video-can">
+    <h2>My Video Title</h2>
+    <p>This is a description of the video.</p>
+    <video class="video" controls>
+        <source src="/videos/f1572cd1e02773134c2b8e67e44606ae.MP4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
     <img class="satisfaction-badge" src="https://cdn.pixabay.com/photo/2016/03/19/03/09/satisfaction-label-1266125_1280.png" alt="Satisfaction Guaranteed" width="600px" height="300px">
 
     <div class="footer">
@@ -357,7 +381,6 @@
   
   
   
-<img src="images/Blue Simple Cleaning Service Facebook Post  (Facebook Profile Picture) (Logo).png" alt="logo">
 <img id="cleaning" src="https://cdn.pixabay.com/photo/2017/09/16/13/47/plastic-2755557_1280.jpg" alt="cleaning supplies" width="500px">
   
 
